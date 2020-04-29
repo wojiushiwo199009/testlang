@@ -1,6 +1,6 @@
 <template>
   <div class="http">
-    https
+    http
   </div>
 </template>
 <script>
