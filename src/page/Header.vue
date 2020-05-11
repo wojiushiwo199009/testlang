@@ -13,6 +13,16 @@
         </el-dropdown>
         <span>王小虎</span>
       </div>
+       <div class='home-user'>
+        <el-dropdown>
+          <i class="el-icon-setting"></i>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item>中文</el-dropdown-item>
+            <el-dropdown-item>英文</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+        <span>中英文</span>
+      </div>
     </el-header>
   </div>
 </template>

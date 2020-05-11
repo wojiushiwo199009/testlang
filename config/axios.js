@@ -12,7 +12,7 @@ axios.defaults.baseURL = baseUrl;//设置默认接口地址
 */
 export function fetch(url, params = {}) {
   return new Promise((resolve, reject) => {
-    axios.get(url, {
+    axios.get('http://rap2.taobao.org:38080/app/mock/253813/'+url, {
       params: params
     })
       .then(response => {
@@ -32,7 +32,7 @@ export function fetch(url, params = {}) {
 
 export function post(url, data = {}) {
   return new Promise((resolve, reject) => {
-    axios.post(url, data)
+    axios.post('http://rap2.taobao.org:38080/app/mock/253813/' +url, data)
       .then(response => {
         resolve(response.data);
       }, err => {

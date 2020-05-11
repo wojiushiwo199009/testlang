@@ -5,21 +5,15 @@
         <template slot="title">
           <i class="el-icon-message"></i>导航一
         </template>
-        <el-menu-item-group>
-          <template slot="title">分组一</template>
           <el-menu-item index="1-1">
             <router-link to="/home">Home</router-link>
           </el-menu-item>
-        </el-menu-item-group>
-        <el-menu-item-group title="分组2">
-          <el-menu-item index="1-3">
+          <el-menu-item index="1-2">
             <router-link to="/about">about</router-link>
           </el-menu-item>
-        </el-menu-item-group>
-        <el-submenu index="1-4">
-          <template slot="title">选项4</template>
-          <el-menu-item index="1-4-1">选项4-1</el-menu-item>
-        </el-submenu>
+          <el-menu-item index="1-3">
+            <router-link to="/http">Http</router-link>
+          </el-menu-item>
       </el-submenu>
       <el-submenu index="2">
         <template slot="title">

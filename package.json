@@ -3,24 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "pm": "npm run serve --proxy=http://10.150.66.40:83",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "pm": "npm run serve --proxy=http://10.150.66.40:83",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/lang/**/*.json'"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^2.6.5",
+    "element-ui": "^2.13.1",
+    "iscroll": "^5.2.0",
     "less": "^3.11.1",
     "less-loader": "^6.0.0",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.17.3",
+    "vue-router": "^3.1.6",
+    "vuex": "^3.3.0"
   },
   "devDependencies": {
+    "@intlify/vue-i18n-loader": "^1.0.0",
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue-cli-plugin-i18n": "^1.0.1",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -33,7 +42,11 @@
       "eslint:recommended"
     ],
     "rules": {
-      "indent":[2,2]
+      "no-console":"off",
+      "indent": [
+        2,
+        2
+      ]
     },
     "parserOptions": {
       "parser": "babel-eslint"
