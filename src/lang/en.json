@@ -1,3 +1,11 @@
 {
-  "message": "hello i18n !!"
+  "menu1":"menu1",
+  "hello":"hello",
+  "message": "hello i18n !!",
+  "home":"home",
+  "scroll":"scroll",
+  "http":"http",
+  "i18n":"i18n",
+  "language":"English",
+  "user":"xiaohu wang"
 }

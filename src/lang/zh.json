@@ -1,3 +1,11 @@
 {
-  "message": "hello i18n !!"
+  "menu1":"导航1",
+  "hello": "你好",
+  "message": "你好 i18n !!",
+  "home": "首页",
+  "scroll": "滚动",
+  "http": "axios请求",
+  "i18n": "国际化",
+  "language":"中文",
+  "user":"王小虎"
 }

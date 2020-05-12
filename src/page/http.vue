@@ -32,7 +32,6 @@ export default {
     }
   },
   mounted(){
-    console.log(this, this.$get,'this')
     this.getUserData()
   }
 }

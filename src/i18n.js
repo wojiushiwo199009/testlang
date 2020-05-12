@@ -11,6 +11,8 @@ function loadLocaleMessages () {
     if (matched && matched.length > 1) {
       const locale = matched[1]
       messages[locale] = locales(key)
+      document.cookie = "language="+locale;
+      console.log(messages,locale,'msg')
     }
   })
   return messages

@@ -7,9 +7,13 @@ import store from './store'
 
 import {post,fetch} from '../config/axios'
 import router from './router'
+import { setCookie, getCookie, checkCookie } from '@/utils'
 Vue.use(ElementUi)
 Vue.prototype.$get=fetch
 Vue.prototype.$post=post
+Vue.prototype.$cookieStore={
+  setCookie, getCookie, checkCookie
+}
 Vue.config.productionTip = false
 
 new Vue({
