@@ -5,8 +5,10 @@ import Home from '@/page/Home.vue'
 import Center from '@/page/Center.vue'
 import Scroll from '@/page/Scroll.vue'
 import Http from '@/page/Http.vue'
+import UserDetail from '@/page/UserDetail.vue'
 import I18n from '@/page/I18n.vue'
-
+import MyComponent from '@/components/MyComponent'
+import store from '@/page/store'
 Vue.use(Router)
 const router = new Router({
   routes:[
@@ -31,10 +33,25 @@ const router = new Router({
           component: Http
         },
         {
+          path: 'user-detail',
+          name: 'user-detail',
+          component: UserDetail
+        },
+        {
           path: 'i18n',
           name: 'i18n',
           component: I18n
         },
+        {
+          path: 'my-component',
+          name: 'my-component',
+          component: MyComponent
+        },
+        {
+          path: 'store',
+          name: 'store',
+          component: store
+        }
       ]
     },
     {

@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "taobao": "vue-cli-service serve --proxy=http://rap2.taobao.org:38080/app/mock/253813",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "pm": "npm run serve --proxy=http://10.150.66.40:83",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/lang/**/*.json'"
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/lang/**/*.json'",
+    "test": "mocha"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -29,6 +30,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "karma": "^5.0.8",
+    "mocha": "^7.1.2",
     "vue-cli-plugin-i18n": "^1.0.1",
     "vue-template-compiler": "^2.6.10"
   },
@@ -42,7 +45,7 @@
       "eslint:recommended"
     ],
     "rules": {
-      "no-console":"off",
+      "no-console": "off",
       "indent": [
         2,
         2

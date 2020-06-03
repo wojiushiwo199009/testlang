@@ -14,7 +14,7 @@ export default {
     const item = {
       date: "2016-03-03",
       name: "gjx",
-      address: "石家庄石家庄"
+      address: "sjz"
     };
     return {
       tableData: Array(20).fill(item)

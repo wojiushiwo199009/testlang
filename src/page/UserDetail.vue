@@ -17,28 +17,25 @@
 
 </template>
 <script>
-import {getUser} from '@/api'
-// import service from '@/api/axios'
+import {getUserDetail} from '@/api'
 export default {
   data(){
     return{
       tableData:[]
     }
   },
+  watch: {
+
+  },
   methods:{
     getUserData(){
-      getUser().then(res => {
+      getUserDetail({id:2}).then(res => {
         this.tableData = res.data.results
       })
     },
   },
   mounted(){
     this.getUserData()
-    //主动取消请求的方法
-    // setTimeout(()=>{
-    //   service.cancle('CancleToken')
-    // },100)
-    
   }
 }
 </script>
